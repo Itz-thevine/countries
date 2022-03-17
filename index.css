@@ -1,0 +1,84 @@
+
+
+/* colours */
+.darkTwo{
+    background-color: #2b3743;
+}
+.darkOne{
+    background-color: #202d36;
+}
+
+/* view ports */
+.headerView{
+    height: 10vh;
+}
+
+
+
+
+
+/* text weights */
+.text-md{
+    font-weight: 600;
+}
+
+/* width */
+.w-150{
+    width: 170%;
+}
+.pl-s{
+    padding-left: 50px;
+}
+
+/* pseudo styles */
+::placeholder{
+    color: white;
+}
+
+
+
+/* none global styles */
+/* .controlItems{
+    display: flex;
+    justify-content: space-between;
+    justify-items:center;
+} */
+
+.white{
+    color: white;
+}
+
+.sel{
+    border: none;
+    outline: none;
+}
+
+.droplist{
+    visibility: hidden;
+}
+
+.drop:hover .droplist{
+    visibility: visible;
+    z-index: 10;
+}
+
+.listItems:hover{
+    background: #1e2b34;
+}
+
+card-width{
+    width:18rem;
+}
+.card-width{
+    display: flex;
+}
+
+/* responsive */
+@media (max-width:640px){
+    .sml{
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+
