@@ -46,7 +46,7 @@ fetch(`https://restcountries.com/v2/name/${value}`).then((data) =>{
                                         <p><span class="fw-bold me-3">Sub Region:</span>${values.subregion}</p>
                                         <p><span class="fw-bold me-3">Capital:</span>${values.capital}</p>
                                     </div>
-                                    <div class="col-lg-6 ">
+                                    <div class="col-lg-6 white">
                                         <p><span class="fw-bold me-3">Top level domain:</span>${values.topLevelDomain}</p>
                                         <p><span class="fw-bold me-3">Currencies:</span>${values.currencies[0].name}</p>
                                         <p><span class="fw-bold me-3">Languages:</span>${myVar2}</p>
