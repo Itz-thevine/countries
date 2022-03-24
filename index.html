@@ -13,31 +13,35 @@
     <header class="px-3 py-2  darkTwo white shadow-sm headerView">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-between">
-            <div>
+            <a href="index.html" class="text-white text-decoration-none">
                 <p class="text-md m-0">Where in the world?</p>
-            </div>
-            <div class="d-flex flex-wrap" id="mode">
-                <i class="fa-solid fa-moon d-flex align-items-center"></i>
-                <p class="p-2 m-0" >Dark mode</p>
+            </a>
+            <div class="d-flex flex-wrap align-items-center mood">
+                <i class="fa-solid fa-moon d-mood"></i>
+                <i class="fa-solid fa-sun l-mood"></i>
+                <p class="p-2 m-0 d-mood" >Dark mode</p>
+                <p class="p-2 m-0 l-mood" >light mode</p>
             </div>
           </div>
         </div>
     </header>
     
-    <main class="bodyView darkOne">
+    <main class="bodyView darkOne min-vh-100">
         <div class="container">
-            <div class="d-flex justify-content-center justify-content-between py-5">
-                <div class="position-relative white">
-                    <input type="search" name="" id="srch" class="w-150 darkTwo border-0 shadow-sm pl-s py-2 rounded white sel" placeholder="Search for a country...">
-                    <div class="position-absolute" style="top: 10px; left: 20px;"><i class="fa-solid fa-magnifying-glass "></i></div>
-                </div>
 
-                <div class="d-flex drop position-relative flex-wrap rounded px-4 justify-content-center align-items-center justify-content-between darkTwo white" style="width: 20%;">
+            <div class="d-flex justify-content-center justify-content-between py-5 row">
+
+                <div class=" position-relative white col-lg-5 col-sm-12 mb-4">
+                    <input type="search" name="" id="srch" class="srch w-100 darkTwo border-0 shadow-sm ps-5 py-3 rounded white sel">
+                    <div class="position-absolute" style="top: 15px; left: 25px;"><i class="fa-solid fa-magnifying-glass "></i></div>
+                    <p class="position-absolute" id="srch-p" style="top: 15px; left: 55px">Search for country...</p>
+                </div>
+                <div class="col-sm-12 col-lg-4 d-flex drop shadow-sm position-relative flex-wrap rounded px-4 justify-content-center align-items-center justify-content-between darkTwo white mb-4 res" >
                     <p class="m-0">Filter by Region</p>
                     <div class="d-flex">
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
-                    <div class="droplist position-absolute darkTwo py-3  rounded shadow-sm" style="top:45px; left:0; width: 100%;">
+                    <div class="droplist position-absolute darkTwo py-3 rounded shadow-sm" style="top:65px; left:0; width: 100%;">
                         <div class="listItems py-1 px-4" id='africa'>Africa</div>
                         <div class="listItems py-1 px-4" id='america'>America</div>
                         <div class="listItems  py-1 px-4" id='asia'>Asia</div>
@@ -45,10 +49,11 @@
                         <div class="listItems  py-1 px-4" id='oceania'>Oceania</div>
                     </div>
                 </div>
+
             </div>
                
             <div>
-                <div class="row sml d-flex justify-content-between justify-content-center" id="root"></div>
+                    <div class="row gx-5 sml d-flex justify-content-between justify-content-center" id="root" ></div>
                 <!-- <div ></div> -->
                 <!-- <div class="card darkTwo shadow-sm text-white card-width" style="width: 18rem;">
                     <img src="https://media.istockphoto.com/photos/astronaut-lying-in-the-meadow-picture-id1304263738?s=612x612" class="card-img-top" alt="...">
@@ -68,6 +73,7 @@
     </main>
 
     <script src="index.js"></script>
+    <script src="general.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
